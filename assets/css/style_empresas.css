@@ -1,0 +1,94 @@
+.main-content-empresas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #58728d;
+    }
+  
+    .empresas-title {
+    color: #a4acb6;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 90px;
+    margin-left: 50px;
+    margin-top:70px;
+  }
+  
+  .empresas-text1 {
+    color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top:20px;
+  }
+  .empresas-subtitle {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    margin-top:20px;
+  }
+  .empresas-text {
+    color: mediumaquamarine;
+    align-self: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-top:20px;
+  }
+  .imagem-empresa1 {
+    float: right;
+    margin: 5px;
+    margin-bottom: 0px;
+    padding: 2px;
+  }
+  .imagem-empresa2 {
+    float: right;
+    margin: 5px;
+    margin-bottom: 0px;
+    padding: 2px;
+  }
+  .imagem-empresa3 {
+    float: right;
+    margin: 5px;
+    margin-bottom: 0px;
+    padding: 2px;
+  }
+ 
+  .cases-scroll-list {
+    display: grid;
+    gap: var(--size-3);
+    grid-auto-flow: column;
+    grid-auto-columns: 33%;
+    padding: 0 var(--size-3) var(--size-3);
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+  .case-logo {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--size-3);
+    padding: var(--size-3);
+    background: var(--surface-2);
+    border-radius: var(--radius-3);
+    box-shadow: var(--shadow-3);
+    align-content: center;
+    text-align: center;    
+}
+
+ /* Serve para controlar a forma que o scroll se movimenta e o que acontece ao soltar o mouse */
+ .snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--size-3);
+}
+
+ .snaps-inline > * {
+    scroll-snap-align: start;
+}
