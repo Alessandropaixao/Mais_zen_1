@@ -1,0 +1,91 @@
+@import url(https://unpkg.com/open-props);
+@import url(https://unpkg.com/open-props/normalize.min.css);
+
+/* SOFT RESET CSS */
+
+
+
+
+/* HEADER SECTION CSS */
+
+
+
+/* CASES SECTION CSS*/
+
+/* Usei display grid pois não achei uma solução com flex, mas no geral, controla as configurações dos cards das empresas,
+quantos são mostrados e a aparencia/alinhamento dos elementos */
+.cases-scroll-list {
+    display: grid;
+    gap: var(--size-3);
+    grid-auto-flow: column;
+    grid-auto-columns: 33%;
+    padding: 0 var(--size-3) var(--size-3);
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.case-logo {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--size-3);
+    padding: var(--size-3);
+    background: var(--surface-2);
+    border-radius: var(--radius-3);
+    box-shadow: var(--shadow-3);
+    align-content: center;
+    text-align: center;    
+}
+
+/* Serve para controlar a forma que o scroll se movimenta e o que acontece ao soltar o mouse */
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--size-3);
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+/* FAQ SECTION CSS*/
+
+/* Estiliza os botões que são usados para abrir e fechar as perguntas/respostas do FAQ */
+.button-slider-faq {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  /* Adiciona um Background para o botão se clicado (vai ser com JS) e quando se passa com o mouse por cima dele */
+  .faq-answer-active, .button-slider-faq:hover {
+    background-color: #ccc;
+  }
+
+  /* Adiciona o sinal de (+) no botão por padrão e após ser clicado (vai ser com JS) */
+   .button-slider-faq:after {
+    content: '\002B'; /* Código Unicode para o sinal de (+) */
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  } 
+
+  /* Adiciona o sinal de (-) no botão após ser clicado (vai ser com JS) */
+  .faq-answer-active:after {
+    content: '\2212'; /* Código Unicode para o sinal (-) */
+  }
+  
+  /* Estiliza o painel de respostas. Fica oculto por padrão (vai ser com JS) */
+  .faq-answer {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
