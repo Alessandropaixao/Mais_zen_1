@@ -34,8 +34,8 @@ body {
 }
 /* TITlE */
 .biofilia-box-title{
-   background:  url("../img/imagem_neuroarquitetura-transparente-50.png"); 
-   center no-repeat ; 
+   background:  url("../img/imagem_neuroarquitetura-transparente-50.png") 
+   center no-repeat; 
    background-size: 900px 600px;
    width: 100%;
 
