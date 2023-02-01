@@ -1,3 +1,6 @@
+@import url(https://unpkg.com/open-props);
+
+
 .main-content-empresas {
     display: flex;
     flex-direction: column;
@@ -5,8 +8,8 @@
     align-items: center;
     background-color: #58728d;
     }
-  
-    .empresas-title {
+   
+ .empresas-title {
     color: #a4acb6;
     display: flex;
     justify-content: space-between;
@@ -15,8 +18,8 @@
     margin-left: 50px;
     margin-top:70px;
   }
-  
-  .empresas-text1 {
+
+.empresas-text1 {
     color: aqua;
     display: flex;
     justify-content: space-between;
@@ -25,7 +28,8 @@
     margin-left: 20px;
     margin-top:20px;
   }
-  .empresas-subtitle {
+  
+.empresas-subtitle {
     color: aliceblue;
     display: flex;
     justify-content: space-between;
@@ -33,7 +37,8 @@
     margin-left: 30px;
     margin-top:20px;
   }
-  .empresas-text {
+  
+.empresas-text {
     color: mediumaquamarine;
     align-self: flex-start;
     justify-content: space-between;
@@ -42,26 +47,29 @@
     margin-left: 20px;
     margin-top:20px;
   }
-  .imagem-empresa1 {
+  
+.imagem-empresa1 {
     float: right;
     margin: 5px;
     margin-bottom: 0px;
     padding: 2px;
   }
-  .imagem-empresa2 {
+  
+.imagem-empresa2 {
     float: right;
     margin: 5px;
     margin-bottom: 0px;
     padding: 2px;
   }
-  .imagem-empresa3 {
+  
+.imagem-empresa3 {
     float: right;
     margin: 5px;
     margin-bottom: 0px;
     padding: 2px;
   }
  
-  .cases-scroll-list {
+.cases-scroll-list {
     display: grid;
     gap: var(--size-3);
     grid-auto-flow: column;
@@ -71,24 +79,40 @@
     overscroll-behavior-inline: contain;
 }
 
-  .case-logo {
+.case-logo {
     display: grid;
     grid-template-rows: min-content;
     gap: var(--size-3);
     padding: var(--size-3);
-    background: var(--surface-2);
+    background:rgb(229, 230, 233);
     border-radius: var(--radius-3);
     box-shadow: var(--shadow-3);
     align-content: center;
     text-align: center;    
 }
 
- /* Serve para controlar a forma que o scroll se movimenta e o que acontece ao soltar o mouse */
- .snaps-inline {
+/* Serve para controlar a forma que o scroll se movimenta e o que acontece ao soltar o mouse */
+.snaps-inline {
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: var(--size-3);
 }
 
- .snaps-inline > * {
+.snaps-inline > * {
     scroll-snap-align: start;
 }
+
+/* FAQ SECTION CSS*/
+
+/* Estiliza os botões que são usados para abrir e fechar as perguntas/respostas do FAQ */
+.button-slider-faq {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
