@@ -1,347 +1,132 @@
-* {
-   list-style: none;
-   margin: 0;
-   padding: 0;
+*{
+   -webkit-box-sizing: border-box;
+   -moz-transition-box-sizing: border-box;
    box-sizing: border-box;
-   border: none;
-   outline: none;
-   text-decoration: none; 
-}
-
-
-body {
-   height: 100vh; 
-}
-/* Main - Neuro e Biofilia */
-/* SECTION-TITLE */
-.main-content-biofilia-title{
-   min-height: 50vh;
-   background-color: #bca0dd;
-   width: 100%;
-   padding: 2vw 2vh;
-   box-sizing: border-box;
-   background-position: 50% 50%;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-blend-mode: soft-light;
-   display:flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   flex-grow: 1;
-   justify-content: center;
-   align-items: center;
-
-}
-/* TITlE */
-.biofilia-box-title{
-   background:  url("../img/imagem_neuroarquitetura-transparente-50.png") 
-   center no-repeat; 
-   background-size: 900px 600px;
-   width: 100%;
-
-}
-
-
+ }
  
-.biofilia-title-text{
-   position: relative;
-   color: whitesmoke;
-   /* z-index: 10; */
-   font-size: 75px;
-   font-weight:900;
-   margin: 0px 100px 100px 50px;
-   text-align: right; 
-   
-}
-
-.biofilia-box-text-description{
-   position: relative;
-   /* z-index: 10; */
-   margin: 0px, 50px;
-   color: whitesmoke;
-   font-size: 30px;
-   margin-top: 580px;
-   font-weight:900;
-   text-align: center;   
-}
-
-/* SUBTITLE */
-/* trabalho */
-
-
-.main-content-biofilia-subtitle {
-   flex-direction: column;
-   width: 65%;
-}
-
-
-.biofilia-box-subtitle-trabalho-img{
-   border-radius: 50%;
-   width: 130px;
-   height: 130px;
-   outline: 2.5px solid whitesmoke;
-   padding: 3px;
-   margin-top: 10px;
-}
-
-.trabalho-img {
-   clip-path: circle(39% at 50% 50%) ;
-   width: 150px;
-   height: 150px;
-   margin: -12px;
-  /* margin: -25px 0 -30px -50px; */
-  
-}
-
-.biofilia-subtitle-trabalho{
-   margin: 2px 0px;
-   font-size: 30px;
-}
-
-
-/* casa */
-.biofilia-box-subtitle-casa-img{
-   border-radius: 50%;
-   width: 130px;
-   height: 130px;
-   outline: 2.5px solid whitesmoke;
-   padding: 3px;
-   margin-top: 10px;
-}
-
-.casa-img {
-   clip-path: circle(39% at 50% 50%) ;
-  width: 150px;
-  height: 150px;
-  margin: -12px;
-  /* margin: -25px 0 -30px -50px; */
-}
-
-.biofilia-subtitle-casa{
-   margin: 2px 0px;
-   font-size: 30px;
-}
-
-/* vida */
-.biofilia-box-subtitle-vida-img{
-   border-radius: 50%;
-   width: 130px;
-   height: 130px;
-   outline: 2.5px solid whitesmoke;
-   padding: 3px;
-   margin-top: 10px;
-}
-
-.vida-img {
-   clip-path: circle(39% at 50% 50%) ;
-  width: 150px;
-  height: 150px;
-  margin: -12px;
-  /* margin: -25px 0 -30px -50px; */
-}
-
-.biofilia-subtitle-vida{
-   margin: 2px 0px;
-   font-size: 30px;
-}
-
-/* subtitle-text */
-   .biofilia-text {
-        font-size: 25px;
-   } 
-
-
-/* SECTION Missão e Valores */
-
-.main-content-missao-valores {
-
-
-      
-      width: 100%;
-      min-height: 50vh;
-      padding: 2vw 2vh;
-      box-sizing: border-box;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-blend-mode: soft-light;
-      background-color: #D9D9D9;
-      display:flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      flex-grow: 1;
-      justify-content: center;
-      align-items: center;
-
-}
-/* NAV-BUTTON */
-.missao-valores-nav {
+ body{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1em;
+ }
+ 
+ 
+ .formulario_{
+     display:block;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+ }
+ 
+ .formulario_> div {
+   width: 400px;
+   margin: 1% auto;
+   padding-bottom: 20px;
+   border-radius: 10px;
+   background: #f0ecec;
+   padding-bottom: 10px;
+ }
+ .formulario{
+    display: block;position: fixed;
+  top: -200%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-transition: all 400ms cubic-bezier(0.35,-0.39, 0.18, 1.18);
+  -moz-transition: all 400ms cubic-bezier(0.35,-0.39, 0.18, 1.18);
+  transition: all 400ms cubic-bezier(0.35,-0.39, 0.18, 1.18);
+ }
+ .container-table .add_table {
+   font-family: 'Oswald', sans-serif;
+   font-size: 17px;
+   color: #f1f1f1;
+   background-color: #8b388e;
+   border: none;
+   margin-bottom: 40px;
+   padding: 7px 17px;
+   border-radius: 5px;
+ }
+ 
+ .input_div{
+   padding: 30px;
    display: flex;
-   flex-direction: column;
-   flex-wrap: nowrap;
-   align-items: stretch;
-   justify-content: flex-start;
-   align-content: center;
-   height: fit-content;
-   position: sticky;
-   top: 150px;
-   background: #FFFD;
-   padding: 10px;
-   }
-
-/*span botoes  */
-.missao-valores-nav span{
-   flex-grow: 1;
+ }
+ 
+ #title{
    text-align: center;
-}  
-
-/* botoes */
-
-
-.quem_somos-btn {
-   cursor: pointer;
-   background: #E6E7EE;
-   color: #00457A;
-   border: none;
-   padding: 10px;
-   margin: 0 0 1vh 0;
-   text-align: justify;
-   text-transform: uppercase;
-   font-size: 20px;
-   display: inline-flex;
-   width: 220px;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   align-items: center;
-   justify-content: center;
-  
-}
-.quem_somos-btn i{
-   display: inline-block;
-   width: 50px;
-   height: 50px;
-   margin: 0 5px 0 0;
-   vertical-align: middle;
-   background-image: url('');
-   background-repeat: no-repeat;
-   background-size: 50px auto;
-}  
-
-.missao-btn{
-   cursor: pointer;
-   background: #E6E7EE;
-   color: #00457A;
-   border: none;
-   padding: 10px;
-   margin: 0 0 1vh 0;
-   text-align: justify;
-   text-transform: uppercase;
-   font-size: 20px;
-   display: inline-flex;
-   width: 220px;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   align-items: center;
-   justify-content: center;
+   width: 100%;
+   height: 40px;
+   border-radius:  5px 5px 0px 0px;
+   display: flex;
  }
-.missao-btn i{
-   display: inline-block;
-   width: 50px;
-   height: 50px;
-   margin: 0 5px 0 0;
-   vertical-align: middle;
-   background-image: url("../img/missao12.png");
-   background-repeat: no-repeat;
-   background-size: 50px auto;
-}  
-
-.visao-btn{
-   cursor: pointer;
-   background: #E6E7EE;
-   color: #00457A;
-   border: none;
-   padding: 10px;
-   margin: 0 0 1vh 0;
-   text-align: justify;
-   text-transform: uppercase;
-   font-size: 20px;
-   display: inline-flex;
-   width: 220px;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   align-items: center;
-   justify-content: center;
-}
-
-.visao-btn i{
-   display: inline-block;
-   width: 50px;
-   height: 50px;
-   margin: 0 5px 0 0;
-   vertical-align: middle;
-   background-image: url("../img/visao2.png");
-   background-repeat: no-repeat;
-   background-size: 50px auto;
-} 
-.valores-btn{
-   cursor: pointer;
-   background: #E6E7EE;
-   color: #00457A;
-   border: none;
-   padding: 10px;
-   margin: 0 0 1vh 0;
-   text-align: justify;
-   text-transform: uppercase;
-   font-size: 20px;
-   display: inline-flex;
-   width: 220px;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   align-items: center;
-   justify-content: center;
-}
-
-.valores-btn i{
-   display: inline-block;
-   width: 50px;
-   height: 50px;
-   margin: 0 5px 0 0;
-   vertical-align: middle;
-   background-image: url("../img/valores.png");
-   background-repeat: no-repeat;
-   background-size: 50px auto;
-} 
-
-/* div */
-.main-content-missao-valores h2{
-   margin: 0 0 20px 0;
-   font-size: 40px;
-   font-family: "Titillium Web";
+ 
+ #title-form {
+   font-family: 'Oswald', sans-serif;
+     font-size: 60px;
+     color: #e6e1e7;
+     background-color: #703737;
+     margin: 35px auto;
  }
-
-.main-content-missao-valores p{
-   color: #00457A;
-   font-size: 30px;
-   line-height: 2;
-   font-family: "Roboto";
-      
+ .container-form {
+   margin-top: 60px;
  }
-
-/* div quem_somos*/
-.quem_somos-box{
-   display: none;
-   box-sizing: border-box;
-   background-position: 50% 50%;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-blend-mode: soft-light;
-   background-color: #FFFD;
-   color: #00457A;
-   flex-grow: 1;
-   margin: 0 3vw;
-   padding: 10px 50px;
-   font-size: 16px;
-   line-height: 2;
-   font-family: "Roboto";
-   
-}
+ 
+ #input_form {
+   border: solid #201f1f;
+   border-radius: 5px;
+   border-width: 1px;
+   display: block;
+   width: 100%;
+   height: 50px;
+   padding: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+     font-size: 50px;
+ }
+ 
+ .send-buttons {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin: 20px 80px;
+   border: solid #1d1c1c;
+     border-radius: 5px;
+     border-width: 1px;
+     width: 180px;
+     padding: 5px;
+     font-family: 'Oswald', sans-serif;
+     font-size: 30px;
+     background-color: #964b96;
+     color:  #FAFAFA;
+ }
+ 
+ .send-buttons:hover {
+   background-color: #968c8c;
+   color: #464343;
+ }
+ 
+ #input-form:focus{
+   border: 1px solid #00BFFF;
+ }
+ 
+ .close {
+     color: #867f7f;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 20px;
+     display: inline-flex;
+     z-index: 1;
+     float: right;
+     margin-top: 5px;
+     margin-right: 5px;
+ }
+ .close .fa-times-circle {
+   color: #dfd6d6;
+ }
+ 
+ .close:hover .close:focus {
+     color: #f0ebeb;
+     text-decoration: none;
+     cursor: pointer;
+ }

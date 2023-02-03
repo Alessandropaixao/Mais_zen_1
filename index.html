@@ -299,30 +299,50 @@
                             <p class="footer-text"><strong>Olá, quer saber mais sobre nossos planos?
                                 Preencha seus dados e entre em contato conosco!</strong></p>
                     </div>            
-                    <div class="footer-form-nome">
-                        <label for="nome">Nome: </label>
-                        <input type="text" name="nome" id="nome" class="form-field-nome"
-                        placeholder="Seu nome completo" required>
-                    </div>
-                    <div class="footer-form-email">
-                        <label for="email">Email: </label>
-                        <input type="email" name="email" id="email" class="form-field-email"
-                        placeholder="seuemail@dominio.com" required>
-                    </div>
-                    <div class="footer-form-fone">
-                        <label for="fone">Telefone: </label>
-                        <input type="tel" name="fone" id="fone" class="form-field-fone"
-                        placeholder="(DDD) 9 XXXX-XXXX" required>
-                    </div>
-                    <div class="footer-form-msg">
-                        <label for="msg">Mensagem: </label>
-                        <textarea name="msg" id="msg" class="form-field-msg" cols="30" rows="10"
-                        placeholder="Digite suas dúvidas ..." required></textarea>
-                    </div>
-                    <div class="footer-form-button">
-                        <button class="form-button" type="submit">
-                        Enviar mensagem
+                    <div class="container-table">
+                        <button id="form-button" class="add_table">
+                            Preencha seus Dados <i class="fa fa-plus" aria-hidden="true"></i>
                         </button>
+                        <div class="content">
+                            <div id="formulario" class="formulario">
+                                <div>
+                                    <form action="createUser.php" method="post">
+                                        <div id="title">
+                                            <h1 id="title-form">Informações para Contato</h1>
+                                            <a class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="container-form">
+                                            <div class="input_div">
+                                                <input class="input_form" type="text" name="name" placeholder="Digite seu Nome"
+                                                value="" required>
+                                            </div>
+                                            <div class="input_div">
+                                                <input class="input_form" type="text" name="email" placeholder="Digite seu Email"
+                                                value="" required>
+                                            </div>
+                                            <div class="input_div">
+                                                <input class="input_form" type="number" name="telefone" placeholder="Digite seu Telefone"
+                                                value="" required>
+                                            </div>
+                                             <div class="input_div">
+                                                <input class="input_form" type="text" name="city" placeholder="Digite sua Cidade"
+                                                value="" required>
+                                            </div>
+                                             <div class="input_div">
+                                                <input class="input_form" type="text" name="state" placeholder="Digite seu Estado"
+                                                value="" required>
+                                            </div>
+                                            <div class="input_div">
+                                                <label for="msg">Mensagem: </label>
+                                                <textarea name="msg" id="msg" class="form-field-msg" cols="50" rows="10"
+                                                placeholder="Digite suas dúvidas ..." required></textarea>
+                                            </div>                                                  
+                                        </div>
+                                        <button class="send-buttons" name="action" value="create"> Enviar </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </form>
                 <div class="localizacao">
