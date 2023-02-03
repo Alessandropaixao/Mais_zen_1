@@ -1,5 +1,5 @@
 
-
+// FUNÇÃO IMAGENS 
 window.onload = function() {
     const fullScreenMenuImageContainer = document.querySelector(".fullscreen-menu__image-container");
     const cardImageContainer = document.querySelector(".card__image-container");
@@ -12,6 +12,9 @@ window.onload = function() {
     cardImageContainer.style.backgroundImage = backgrounds[Math.floor(Math.random() * backgrounds.length)]; 
     body.style.backgroundImage = backgroundsBody[Math.floor(Math.random() * backgroundsBody.length)]; 
   };
+  
+// const fullScreenMenuImageContainer = document.querySelector(".fullscreen-menu__image-container");
+// fullScreenMenuImageContainer.style.backgroundImage = "url('../assets/img/img_random/casa-Copia-50.png')"
 
 
 function openMenu() {

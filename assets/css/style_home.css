@@ -309,8 +309,8 @@ h1 {
 		width: 5rem;  /*Make square */
 		height: 5rem; /*Make square */
 		border-radius: 50%; /*Turn the square into a circle */
-		/* background-image: url('https://source.unsplash.com/random'); Apply the image as the background */
-		/* background-image: url('../Mais_zen_1/assets/img/img_random/casa-Copia.png'); */
+		/* /* background-image: url('https://source.unsplash.com/random');  */
+		/* background-image:  url('../img/img_random/casa-Copia-50.png');  */
 		background-size: cover;  /*Force the background image to cover the container */
 		background-position: center center;  /*Position the image in the middle */
 		margin: 0 auto 1.5rem;
