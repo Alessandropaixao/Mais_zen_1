@@ -150,39 +150,39 @@ h1 {
 }
 
 .icon--twitter::before {
-    content: '\f099'; /* Unicode value for the twitter icon in our chosen icon font */
+    content: '\f099'; 
 }
 
 .icon--facebook::before {
-    content: '\f09a'; /* Unicode value for the facebook icon in our chosen icon font */
+    content: '\f09a'; 
 }
 
 .icon--pintrest::before {
-    content: '\f231'; /* Unicode value for the pintrest icon in our chosen icon font */
+    content: '\f231'; 
 }
 
 .social-button--twitter {
-    background-color: #32b9e7; /* Twitter colour */
+    background-color: #32b9e7; 
 }
 
 .social-button--twitter:hover {
-    background-color: #2a9dc4; /* Twitter hover colour */
+    background-color: #2a9dc4; 
 }
 
 .social-button--facebook {
-    background-color: #4b70ab; /* Facebook colour */
+    background-color: #4b70ab; 
 }
 
 .social-button--facebook:hover {
-    background-color: #3f5f91; /* Facebook hover colour */
+    background-color: #3f5f91; 
 }
 
 .social-button--pintrest {
-    background-color: #d63533; /* Pintrest colour */
+    background-color: #d63533; 
 }
 
 .social-button--pintrest:hover {
-    background-color: #b52d2b; /* Pintrest hover colour */
+    background-color: #b52d2b; 
 }
 
 
