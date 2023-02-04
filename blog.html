@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="stylesheet" href="assets/css/style_home.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/main_Blog.js" defer></script>
     <title>Mais Zen - Blog</title>
 </head>
 
@@ -70,7 +71,7 @@
 					</div>
 				</a>
 
-				<img class="card__image" src="https://source.unsplash.com/random">
+				<!-- <img class="card__image" src="https://source.unsplash.com/random"> -->
 
 			</aside>
 
@@ -80,7 +81,7 @@
 					<h1 class="card__title"><img src="assets/img/logo-mais-zen.png" class="header-logo" alt="Logo da Mais Zen"></a></h1>
     
 				</header>
-
+    <MAin>
 				<section class="card__body">
         <section class="main-content-blog">
             <div class="blog-box">
@@ -89,39 +90,37 @@
                     <div class="blog-box-top-box_list">
                         <h3 class="blog-subtitle"><a
                                     href="https://exame.com/negocios/novo-escritorio-da-amazon-e-formado-por-esferas-florestadas-veja/"
-                                    target="_blank">Blog 1</a></h3>
-                        <p class="blog-text">Amazon inaugurou um escritório em Seattle, nos Estados Unidos, composto por três esferas envidraçadas e repletas de vegetação, inspirado no conceito de Biofilia. O complexo possui uma arquitetura orgânica que contrasta com os grandes edifícios comerciais da cidade e é chamado de "Esferas". Os funcionários da empresa têm acesso a áreas suspensas com bancos e mesas capazes de acomodar até 800 pessoas. O escritório é decorado com mais de 40 mil plantas de espécies diferentes cultivadas fora do edifício ao longo de três anos, com paredes vivas que apresentam estratificação vertical. A Amazon acredita que o escritório pode ter um impacto positivo na produtividade e criatividade dos funcionários e oferece passeios gratuitos ao público.</p>        
+                                    target="_blank">Escritório em Seattle, composto por três esferas envidraçadas</a></h3>
+                        <p class="blog-text" id="blog-text-"></p>        
                     </div>
                     <div class="blog-box-top-box_list">
                         <h3 class="blog-subtitle"><a
                                     href="https://www.archdaily.com.br/br/981830/neuroarquitetura-como-o-seu-cerebro-responde-aos-espacos"
-                                    target="_blank">Blog 2</a></h3>
-                        <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ad?</p>        
+                                    target="_blank">Neuroarquitetura é uma abordagem para projetar ambientes</a></h3>
+                        <p class="blog-text" id="blog-text-2"></p>        
                     </div> 
                     <div class="blog-box-top-box_list">
                         <h3 class="blog-subtitle"><a
                                     href="https://exame.com/negocios/microsoft-cria-escritorios-na-arvore-para-estimular-criatividade/"
-                                    target="_blank">Blog 3</a></h3>
-                        <p class="blog-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore,dolorem?</p>
+                                    target="_blank">Escritórios na árvore</a></h3>
+                        <p class="blog-text" id="blog-text-3"></p>
                     </div>  
                 </div>
                 <div class="blog-box-bottom">
                     <div class="blog-box-bottom-box_list">      
                          <h3 class="blog-subtitle"><a
                                     href="https://www.t2arquitetura.com.br/neuroarquitetura-corporativa/"
-                                    target="_blank">Blog 4</a></h3>
-                        <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eum.</p>                       
+                                    target="_blank">Neuroarquitetura é uma ciência multidisciplinar</a></h3>
+                        <p class="blog-text" id="blog-text-4"></p>                       
                     </div> 
                     <div class="blog-box-bottom-box_list">  
                         <h3 class="blog-subtitle"><a href="https://sustentarqui.com.br/biofilia-na-arquitetura/"
-                                    target="_blank">Blog 5</a></h3>
-                        <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ad?</p>
+                                    target="_blank">Biofilia, interagir e se relacionar com a natureza</a></h3>
+                        <p class="blog-text" id="blog-text-5"></p>
                     </div> 
                     <div class="blog-box-bottom-box_list">  
-                            <h3 class="blog-subtitle"><a href="https://www.neuro.arq.br/#text-4col" target="_blank">Blog
-                                    6</a></h3>
-                            <p class="blog-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore,
-                                        dolorem?</p>
+                            <h3 class="blog-subtitle"><a href="https://www.neuro.arq.br/#text-4col" target="_blank">NEUROARQ®</a></h3>
+                            <p class="blog-text" id="blog-text-6"></p>
                      </div>  
                 </div>
             </div>
@@ -134,30 +133,50 @@
                 <p class="footer-text"><strong>Olá, quer saber mais sobre nossos planos?
                     Preencha seus dados e entre em contato conosco!</strong></p>
         </div>            
-        <div class="footer-form-nome">
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" class="form-field-nome"
-            placeholder="Seu nome completo" required>
-        </div>
-        <div class="footer-form-email">
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" class="form-field-email"
-            placeholder="seuemail@dominio.com" required>
-        </div>
-        <div class="footer-form-fone">
-            <label for="fone">Telefone: </label>
-            <input type="tel" name="fone" id="fone" class="form-field-fone"
-            placeholder="(DDD) 9 XXXX-XXXX" required>
-        </div>
-        <div class="footer-form-msg">
-            <label for="msg">Mensagem: </label>
-            <textarea name="msg" id="msg" class="form-field-msg" cols="30" rows="10"
-            placeholder="Digite suas dúvidas ..." required></textarea>
-        </div>
-        <div class="footer-form-button">
-            <button class="form-button" type="submit">
-            Enviar mensagem
+        <div class="container-table">
+            <button id="form-button" class="add_table">
+                Preencha seus Dados <i class="fa fa-plus" aria-hidden="true"></i>
             </button>
+            <div class="content">
+                <div id="formulario" class="formulario">
+                    <div>
+                        <form action="createUser.php" method="post">
+                            <div id="title">
+                                <h1 id="title-form">Informações para Contato</h1>
+                                <a class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="container-form">
+                                <div class="input_div">
+                                    <input class="input_form" type="text" name="name" placeholder="Digite seu Nome"
+                                    value="" required>
+                                </div>
+                                <div class="input_div">
+                                    <input class="input_form" type="text" name="email" placeholder="Digite seu Email"
+                                    value="" required>
+                                </div>
+                                <div class="input_div">
+                                    <input class="input_form" type="number" name="telefone" placeholder="Digite seu Telefone"
+                                    value="" required>
+                                </div>
+                                 <div class="input_div">
+                                    <input class="input_form" type="text" name="city" placeholder="Digite sua Cidade"
+                                    value="" required>
+                                </div>
+                                 <div class="input_div">
+                                    <input class="input_form" type="text" name="state" placeholder="Digite seu Estado"
+                                    value="" required>
+                                </div>
+                                <div class="input_div">
+                                    <label for="msg">Mensagem: </label>
+                                    <textarea name="msg" id="msg" class="form-field-msg" cols="50" rows="5"
+                                    placeholder="Digite suas dúvidas ..." required></textarea>
+                                </div>                                                  
+                            </div>
+                            <button class="send-buttons" name="action" value="create"> Enviar </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
     <div class="localizacao">
@@ -197,6 +216,6 @@
 
 </article>
 <!-- Include jQuery and main.js - Short URL http://srt.lt/Ro3W2 -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
 </body>
 </html>

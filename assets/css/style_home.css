@@ -28,16 +28,18 @@ body {
 	min-height: 100vh; /* Force vertical centering since the content won't always be taller than the viewport */
 	padding: 2rem; /* Using rem values as they don't cascade like em units and are not fixed units like pixels */
 
-	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random'); /* Multiple Background images, semi-transparent gradient used as a fallback for Edge */
+	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(''); /* https://source.unsplash.com/random Multiple Background images, semi-transparent gradient used as a fallback for Edge */
 	background-position: center center;
-	background-size: cover;
+	/* background-size: cover; */
+	
 }
 
 @supports(background-blend-mode: multiply) { /* Use a blend mode on the background in browser that support it */
 
 	body {
-		background-image: linear-gradient(#4A4A4A, #212121), url('https://source.unsplash.com/random'); /* Multiple background images, Gradient overlay and the Image */
+		background-image: linear-gradient(#4A4A4A, #212121), url(''); /* Multiple background images, Gradient overlay and the Image */
 		background-blend-mode: multiply; /* Blending the Gradient with the Background Image (can't use black to blend) */
+		
 	}
 
 }
@@ -63,8 +65,8 @@ h1 {
 	.card__image-container {
 		max-height: 15rem; /* Stop the image getting too big */
 
-		background-image: url('https://source.unsplash.com/random');
-		background-size: cover; /* Force the background image to cover the container */
+		/* background-image: url('https://source.unsplash.com/random'); */
+		/* background-size: cover; Force the background image to cover the container */
 		background-position: center center; /* Position the image in the middle */
 	}
 
@@ -182,12 +184,6 @@ h1 {
 .social-button--pintrest:hover {
     background-color: #b52d2b; /* Pintrest hover colour */
 }
-
-
-
-
-
-
 
 
 
@@ -310,12 +306,13 @@ h1 {
 }
 
 	.fullscreen-menu__image-container {
-		width: 5rem; /* Make square */
-		height: 5rem; /* Make square */
-		border-radius: 50%; /* Turn the square into a circle */
-		background-image: url('https://source.unsplash.com/random'); /* Apply the image as the background */
-		background-size: cover; /* Force the background image to cover the container */
-		background-position: center center; /* Position the image in the middle */
+		width: 5rem;  /*Make square */
+		height: 5rem; /*Make square */
+		border-radius: 50%; /*Turn the square into a circle */
+		/* background-image: url('https://source.unsplash.com/random'); Apply the image as the background */
+		/* background-image: url('../Mais_zen_1/assets/img/img_random/casa-Copia.png'); */
+		background-size: cover;  /*Force the background image to cover the container */
+		background-position: center center;  /*Position the image in the middle */
 		margin: 0 auto 1.5rem;
 	}
 
@@ -379,5 +376,266 @@ h1 {
 
 }
 
+*{
+    -webkit-box-sizing: border-box;
+    -moz-transition-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+  
+  
+.formulario_{
+      display:block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+  
+.formulario_> div {
+    width: 400px;
+    margin: 1% auto;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background: #f0ecec;
+    padding-bottom: 10px;
+}
+.formulario{
+   display: block;position: fixed;
+   top: -200%;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   z-index: -1;
+   -webkit-transition: all 400ms cubic-bezier(0.35,-0.39, 0.18, 1.18);
+   -moz-transition: all 400ms cubic-bezier(0.35,-0.39, 0.18, 1.18);
+   transition: all 400ms cubic-bezier(0.35,-0.39, 0.18, 1.18);
+ }
+.container-table .add_table {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    color: #f1f1f1;
+    background-color: #8b388e;
+    border: none;
+    margin-bottom: 40px;
+    padding: 7px 17px;
+    border-radius: 5px;
+}
+  
+.input_div{
+    padding: 30px;
+    display: flex;
+}
+  
+#title{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius:  5px 5px 0px 0px;
+    display: flex;
+}
+  
+#title-form {
+    font-family: 'Oswald', sans-serif;
+      font-size: 60px;
+      color: #e6e1e7;
+      background-color: #703737;
+      margin: 35px auto;
+}
+.container-form {
+    margin-top: 60px;
+}
+  
+#input_form {
+    border: solid #201f1f;
+    border-radius: 5px;
+    border-width: 1px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+      font-size: 50px;
+}
+  
+.send-buttons {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     margin: 20px 80px;
+     border: solid #1d1c1c;
+     border-radius: 5px;
+     border-width: 1px;
+     width: 180px;
+     padding: 5px;
+     font-family: 'Oswald', sans-serif;
+     font-size: 30px;
+     background-color: #964b96;
+     color:  #FAFAFA;
+}
+
+  
+.send-buttons:hover {
+    background-color: #968c8c;
+    color: #464343;
+}
+  
+#input-form:focus{
+    border: 1px solid #00BFFF;
+}
+  
+.close {
+     color: #867f7f;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 20px;
+     display: inline-flex;
+     z-index: 1;
+     float: right;
+     margin-top: 5px;
+     margin-right: 5px;
+}
+.close .fa-times-circle {
+    color: #dfd6d6;
+}
+  
+.close:hover .close:focus {
+     color: #f0ebeb;
+     text-decoration: none;
+     cursor: pointer;
+}
+
+/* HOME */
+.sobre-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  }
+.home-sobre_nos-img {
+	width: 7rem; 
+	height: 7rem; 
+	border-radius: 50%;
+   background-size: contain;
+   background-position: center center;
+ }
+ .home-sobre_nos-link{
+	margin-top: -30px ;
+ }
+
+/* SOBRE NOS */
+
+.biofilia-box-subtitle-img{
+	margin: 40px 0px -40px -40px;
+ }
+
+ .subtitle-img {
+	width: 10rem;  
+	height: 10rem; 
+	border-radius: 50%;
+   background-size: contain;
+   background-position: center center;
+   margin: 0 auto 1.5rem; 
+ }
+
+ .missao-valores-nav{
+	display: block;
+ }
+
+  .quem_somos-btn{
+	font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    color: #f1f1f1;
+    background-color: #8b388e;
+    border: none;
+    margin-bottom: 5px;
+    padding: 7px 17px;
+    border-radius: 5px; 
+  }
+  
+ .missao-btn{
+	font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    color: #f1f1f1;
+    background-color: #8b388e;
+    border: none;
+    margin-bottom: 5px;
+    padding: 7px 17px;
+    border-radius: 5px; 
+  }
+
+  .visao-btn{
+	font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    color: #f1f1f1;
+    background-color: #8b388e;
+    border: none;
+    margin-bottom: 5px;
+    padding: 7px 17px;
+    border-radius: 5px; 
+  }
+
+ .valores-btn{
+	font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    color: #f1f1f1;
+    background-color: #8b388e;
+    border: none;
+    margin-bottom: 5px;
+    padding: 7px 17px;
+    border-radius: 5px; 
+  }
+
+ /* div quem_somos*/
+.quem_somos-box{
+	display: block;	
+ }
+
+ /* div missao */
+.missao-box{
+	display: none;
+ }
+ /* div visao */
+ .visao-box{
+	display: none;
+ }
+ /* div valores */
+ .valores-box{
+	display: none;
+	/* box-sizing: border-box;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: soft-light;
+	background-color: #FFFD;
+	color: #00457A;
+	flex-grow: 1;
+	margin: 0 3vw;
+	padding: 10px 50px;
+	font-size: 16px;
+	line-height: 2;
+	font-family: "Roboto"; */
+ }
+ 
+/* PARA EMPRESAS */
+
+.empresas-box{
+	display: flex;
+}
+.empresas-img {
+	/* width: 10rem;  
+	height: 10rem;  */
+	border-radius: 5%;
+   background-size: contain;
+   /* background-position: center center; */
+   /* margin: 0 auto 1.5rem;  */
+   width: 200px;
+   height: 100px;
+ }
 
 
