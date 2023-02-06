@@ -1,4 +1,4 @@
-// FUNÇÃO HOME
+// FUNÇÃO IMAGENS 
 window.onload = function() {
     const fullScreenMenuImageContainer = document.querySelector(".fullscreen-menu__image-container");
     const cardImageContainer = document.querySelector(".card__image-container");
@@ -12,7 +12,8 @@ window.onload = function() {
     body.style.backgroundImage = backgroundsBody[Math.floor(Math.random() * backgroundsBody.length)]; 
   };
   
-  
+// const fullScreenMenuImageContainer = document.querySelector(".fullscreen-menu__image-container");
+// fullScreenMenuImageContainer.style.backgroundImage = "url('../assets/img/img_random/casa-Copia-50.png')"
 
 // FUNÇAO BOTAO FAQ
 
@@ -28,12 +29,6 @@ buttons.forEach(button => {
         }
     });
 });
-
-
-
-
-
- // FUNÇÃO HOME 
 
 function openMenu() {
     $('.js-menu-container').addClass('is-open'); // Find element with the class 'js-menu-container' and apply an additional class of 'is-open'
@@ -108,4 +103,3 @@ window.onclick = function(event) {
     }
 
 }
-

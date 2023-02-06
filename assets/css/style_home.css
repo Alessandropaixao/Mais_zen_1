@@ -636,5 +636,25 @@ h1 {
    width: 200px;
    height: 100px;
  }
+/* PARA VOCE */
+#button-slider-faq{
+	font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    color: #f1f1f1;
+    background-color: #8b388e;
+    border: none;
+    margin-bottom: 5px;
+    padding: 7px 17px;
+    border-radius: 5px; 
+}
 
+/* div botao faq */
+.voce-box-imag{
+	height: 200px; 
+	width: 500px;
+}
+
+.faq-answer{
+	display: none;	
+}
 
