@@ -26,7 +26,7 @@
 
                 <div class="fullscreen-menu__image-container"></div>
 
-                <h1 class="fullscreen-menu__title"><a href="/" class="header-logo-link"><img
+                <h1 class="fullscreen-menu__title"><a href="index.html" class="header-logo-link"><img
                     src="assets/img/logo-mais-zen.png" class="header-logo" alt="Logo da Mais Zen"></a></h1>
 
                 <nav class="fullscreen-menu__nav">
@@ -79,7 +79,7 @@
 			<section class="card__contents">
 
 				<header class="card__header">
-					<h1 class="card__title"><img src="assets/img/logo-mais-zen.png" class="header-logo" alt="Logo da Mais Zen"></a></h1>
+					<a href="index.html" class="header-logo-link"><h1 class="card__title"><img src="assets/img/logo-mais-zen.png" class="header-logo" alt="Logo da Mais Zen"></h1></a>
     
 				</header>
 
@@ -140,35 +140,118 @@
                 </p>
             </div>
         </section>
-        <section class="main-content-pacotes">
-            <div class="pacotes-box">
+        <section class="section-pacotes-consultor">
+            <div class="pacotes-box-title">
                 <h2 class="pacotes-title">Nossos Pacotes</h2>
                 <p class="pacotes-text"><strong>Escolha entre nossos pacotes de atendimento</strong></p>
-                <div class="pacotes-ametista">
-                    <h3 class="pacotes-ametista-title">Ametista</h3>
-                    <ul class="pacotes-list">
-                        <li>Pacote básico</li>
-                        <li>7 dias</li>
-                    </ul>
-                    <a href="#footer-contato" class="button-pacotes">Saiba mais</a>
+                <div class="pacotes-box">
+                    <div class="pacotes-ametista">
+                        <h3 class="pacotes-ametista-title">Ametista</h3>
+                        <ul class="pacotes-list">
+                            <li>Pacote básico</li>
+                            <li>Áreas menores</li>
+                            <li>De 1 a 2 ambientes</li>
+                        </ul>
+                    </div>                                   
+                    <div class="pacotes-jade">
+                        <h3 class="pacotes-jade-title">Jade</h3>
+                        <ul class="pacotes-list">
+                            <li>Pacote intermediário</li>
+                            <li>Áreas intermediarias </li>
+                            <li>De 3 a 4 ambientes</li>
+                        </ul>
+                    </div>                                   
+                    <div class="pacotes-diamante">
+                        <h3 class="pacotes-diamante-title">Diamante</h3>
+                        <ul class="pacotes-list">
+                            <li>Pacote completo</li>
+                            <li>Áreas grandes </li>
+                            <li>Imóvel completo</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="pacotes-jade">
-                    <h3 class="pacotes-jade-title">Jade</h3>
-                    <ul class="pacotes-list">
-                        <li>Pacote intermediário</li>
-                        <li>15 dias</li>
-                    </ul>
-                    <a href="#footer-contato" class="button-pacotes">Saiba mais</a>
-                </div>
-
-                <div class="pacotes-diamante">
-                    <h3 class="pacotes-diamante-title">Diamante</h3>
-                    <ul class="pacotes-list">
-                        <li>Pacote completo</li>
-                        <li>30 dias</li>
-                    </ul>
-                    <a href="#footer-contato" class="button-pacotes">Saiba mais</a>
+             </div>
+             <div class="container-table_consultor">
+                <button id="form-button_consultor" class="add_table_consultor">Fale com um consultor <i class="fa fa-plus"
+                    aria-hidden="true"></i>
+                </button>
+                <div class="content_formulario_consultor">
+                    <div id="formulario_consultor" class="formulario_consultor">
+                        <div>
+                            <form action="createUser.php" method="post">
+                                <div id="title_consultor">
+                                    <h1 id="title-form_consultor">Fale com um consultor</h1>
+                                    <a class="close_consultor"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="container-form_cosultor">
+                                    <div class="container-form_cosultor_form">
+                                        <div class="input_div_consultor">
+                                            <input class="input_form_consultor" type="text" name="name"
+                                                placeholder="Digite seu Nome" value="" required>
+                                        </div>
+                                        <div class="input_div_consultor">
+                                            <input class="input_form_consultor" type="number" name="cpf_cnpj"
+                                                placeholder="CPF ou CNPJ somente numero" pattern="[0-9]*" value="" required>
+                                        </div>
+                                        <div class="input_div_consultor">
+                                            <input class="input_form_consultor" type="email" name="email"
+                                                placeholder="Digite seu Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                                required>
+                                        </div>
+                                        <div class="input_div_consultor">
+                                            <input class="input_form_consultor" type="tel" name="telefone"
+                                                placeholder="Digite seu Telefone( )" value="" required>
+                                        </div>
+                                        <div class="input_div_consultor">
+                                            <input class="input_form_consultor" type="text" name="city"
+                                                placeholder="Digite sua Cidade" value="" required>
+                                        </div>
+                                        <div class="input_div_consultor">
+                                            <input class="input_form_consultor" type="text" name="state"
+                                                placeholder="Digite seu Estado" value="" required>
+                                        </div>
+                                        <div class="input_div_consultor">
+                                            <select name="select_consultor" id="select_consultor" class="select_consultor">
+                                                <option value="">Escolha uma opção</option>
+                                                <option value="Para_voce">Para Você</option>
+                                                <option value="Para_empresa">Para Sua Empresa</option>
+                                            </select>
+                                        </div>
+                                        <div class="input_div_consultor_text">
+                                            <p class="input_form_consultor_text">Escolha seu plano:</p>
+                                        </div>
+                                        <div class="input_div_consultor">
+                                            <label>
+                                                <input type="radio" name="pacotes" class="input_form_consultor_label"
+                                                    value="ametista"> Ametista </label>
+                                            <label>
+                                                <input type="radio" name="pacotes" class="input_form_consultor_label" value="jade">
+                                                Jade </label>
+                                            <label>
+                                                <input type="radio" name="pacotes" class="input_form_consultor_label"
+                                                    value="diamante"> Diamante </label>
+                                        </div>
+                                        <div class="input_div_consultor">
+                                            <label for="msg"> </label>
+                                            <textarea name="msg_consultor" id="msg_consultor" class="form-field-msg_consultor"
+                                                cols="50" rows="9" placeholder="Diga o que deseja em poucas palavras..."
+                                                required></textarea>
+                                        </div>
+                                    </div>
+                                     <div class="container-form_cosultor_text">
+                                        <h1 id="title_cosultor_text">
+                                            <img src="assets/img/logo-mais-zen.png" class="header-logo" alt="Logo da Mais Zen">
+                                        </h1>
+                                        <p id="cosultor_text"><strong>Você quer transformar seu espaço em um local acolhedor e
+                                                equilibrado?</strong><br>Basta preencher este formulário. Assim que recebermos seu
+                                            contato, um de nossos consultores irá entrar em contato com você para entender suas
+                                            necessidades e desejos, e ajudá-lo a criar o ambiente perfeito para você.</p>
+                                     </div>
+                                </div>
+                                <button class="send-buttons" name="action_consultor" value="create"> Enviar </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -189,7 +272,7 @@
                     para ver este caso de sucesso e se inspirar para comprar nossa idéia de negócio!</p>
                     <p class="cases-text">
                         <strong>
-                            Abaixo temos algumas empresas brasileiras que estão buscando a forma
+                            Algumas empresas brasileiras que estão buscando a forma
                             <a target="_self" href="/"><em>+Zen</em></a> para seu ambiente:
                         </strong>
                     </p>
@@ -201,26 +284,6 @@
                                 </a>
                                 <figcaption>
                                     Sociedade Beneficente Israelista Albert Einstein
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="case-logo">
-                            <figure>
-                                <a href="https://www.bancoob.com.br/" title="Clique para acessar o site do Bancoob">
-                                    <img src="assets/img/logo-bancoob.png" alt="Logo do Bancoob">
-                                </a>
-                                <figcaption>
-                                    Bancoob
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="case-logo">
-                            <figure>
-                                <a href="https://www.grupoboticario.com.br/" title="Clique para acessar o site do Grupo Boticário">
-                                    <img src="assets/img/logo-boticario.png" alt="Logo do Grupo Boticário">
-                                </a>
-                                <figcaption>
-                                    Grupo Boticário
                                 </figcaption>
                             </figure>
                         </div>
@@ -236,61 +299,11 @@
                         </div>
                         <div class="case-logo">
                             <figure>
-                                <a href="https://www.cacaushow.com.br/" title="Clique para acessar o site da Cacau Show">
-                                    <img src="assets/img/logo-cacau.png" alt="Logo da Cacau Show">
-                                </a>
-                                <figcaption>
-                                    Cacau Show
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="case-logo">
-                            <figure>
-                                <a href="https://www.cielo.com.br/" title="Clique para acessar o site da Cielo">
-                                    <img src="assets/img/logo-cielo.png" alt="Logo da Cielo">
-                                </a>
-                                <figcaption>
-                                    Cielo
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="case-logo">
-                            <figure>
-                                <a href="https://br.clear.sale/" title="Clique para acessar o site da Clearsale">
-                                    <img src="assets/img/logo-clearsale.png" alt="Logo da Clearsale">
-                                </a>
-                                <figcaption>
-                                    Clearsale
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="case-logo">
-                            <figure>
-                                <a href="https://www.elo7.com.br/" title="Clique para acessar o site da Elo7">
-                                    <img src="assets/img/logo-elo7.png" alt="Logo da Elo7">
-                                </a>
-                                <figcaption>
-                                    Elo 7
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="case-logo">
-                            <figure>
                                 <a href="https://www.jnjbrasil.com.br/" title="Clique para acessar o site da Johnson&Johnson">
                                     <img src="assets/img/logo-johnson.png" alt="Logo da Johnson&Johnson">
                                 </a>
                                 <figcaption>
                                     Johnson&Johnson
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="case-logo">
-                            <figure>
-                                <a href="https://www.grupojacto.com.br/" title="Clique para acessar o site do Grupo Jacto">
-                                    <img src="assets/img/logo-jacto.png" alt="Logo do Grupo Jacto">
-                                </a>
-                                <figcaption>
-                                    Grupo Jacto
                                 </figcaption>
                             </figure>
                         </div>
@@ -300,32 +313,29 @@
             <section class="main-content-faq">
                 <div class="faq-box">
                     <h2 class="faq-title">Perguntas Frequentes</h2>                
-                    <div class="faq-box-button">
-                        
-                        
-                        
-                    </div>
+                    <!-- <div class="faq-box-button">                                                                           
+                    </div> -->
                     <div class="faq-box-answers">
-                        <button class="button-slider-faq" id="button-slider-faq">O que é a Neuroarquitetura e como ela ajuda no bem-estar das pessoas?</button>
+                        <button class="button-slider-faq" id="button-slider-faq"> Como a Neuroarquitetura pode ajudar a melhorar o ambiente de trabalho em empresas?</button>
                         <div class="faq-answer">
-                            <p class="faq-text">R: A Neuroarquitetura é uma abordagem da arquitetura que se concentra na relação entre o ambiente construído e o cérebro humano. A ideia é projetar espaços que sejam funcionais, confortáveis e saudáveis para o bem-estar mental e físico das pessoas. Isso pode ser alcançado através de técnicas como a utilização de cores, texturas, luz natural e outros elementos que possam ajudar a criar um ambiente equilibrado e acolhedor.</p>
+                            <p class="faq-text">R: A Neuroarquitetura pode ajudar a melhorar o ambiente de trabalho em empresas ao fornecer soluções de design baseadas em evidências científicas que visam aumentar a produtividade, a satisfação no trabalho e a saúde dos funcionários. Isso pode incluir elementos como iluminação adequada, cores relaxantes, plantas e paisagens naturais, entre outros.</p>
                          </div>
-                         <button class="button-slider-faq" id="button-slider-faq">O que é a Biofilia e como ela ajuda no bem-estar das pessoas?</button>
+                         <button class="button-slider-faq" id="button-slider-faq">O que é Biofilia e como pode ser aplicada no ambiente de trabalho?</button>
                          <div class="faq-answer">
-                            <p class="faq-text">R: A Biofilia é a teoria de que existe uma conexão fundamental entre os seres humanos e a natureza. A ideia é que a exposição regular à natureza é benéfica para o bem-estar mental e físico das pessoas. Na arquitetura, a Biofilia pode ser aplicada através da integração de elementos naturais, como jardins, fontes, materiais naturais e luz natural, para criar um ambiente mais acolhedor e saudável.</p>
+                            <p class="faq-text">R: Biofilia é o amor por seres vivos e natureza. É uma filosofia que visa trazer a natureza para dentro do ambiente de trabalho para melhorar a saúde e o bem-estar dos funcionários. Isso pode incluir elementos como jardins verticais, paredes verdes, plantas e água, além de uma conexão visual com a natureza.</p>
                          </div>
-                        <button class="button-slider-faq" id="button-slider-faq">Como a combinação da Neuroarquitetura e da Biofilia pode ajudar a trazer natureza e bem-estar para dentro de casa?</button>
+                        <button class="button-slider-faq" id="button-slider-faq">Quais são os benefícios da implementação da Neuroarquitetura e Biofilia no ambiente de trabalho?</button>
                         <div class="faq-answer">
-                            <p class="faq-text">R: A combinação da Neuroarquitetura e da Biofilia pode ser uma forma poderosa de trazer natureza e bem-estar para dentro de casa. A Neuroarquitetura fornece uma abordagem funcional e científica para projetar espaços que sejam acolhedores e saudáveis, enquanto a Biofilia incentiva a integração de elementos naturais para criar um ambiente equilibrado e acolhedor. Juntas, essas abordagens podem ser combinadas para criar um ambiente de vida que promova o bem-estar físico e mental, ajudando as pessoas a se sentirem mais conectadas à natureza e ao seu entorno.</p>
+                            <p class="faq-text">R: A implementação da Neuroarquitetura e Biofilia no ambiente de trabalho pode trazer inúmeros benefícios para as empresas e seus funcionários, incluindo aumento da produtividade, diminuição do estresse, aumento da satisfação no trabalho, melhora da saúde e bem-estar, além de criação de um ambiente mais atrativo para os funcionários e para os clientes.</p>
                         </div>
                     </div>
                 </div>    
-                </section>
+            </section>
             <footer class="card__footer">
                 <div class="footer-box">
                     <h2 class="footer-title" id="footer-contato">Contato</h2>
                     <form class="footer-form" action="/">
-                        <p class="footer-text"><strong>Olá, quer saber mais sobre nossos planos?
+                        <p class="footer-text"><strong>Para conhecer um pouco mais sobre a +Zen, dúvidas ou reclamações.
                             Preencha seus dados e entre em contato conosco!</strong></p>
                 </div>            
                 <div class="container-table">
@@ -401,7 +411,7 @@
                         title="Link para o WhatsApp"><img src="assets/img/icon-whatsapp.svg"></a>
                 </ul>
             </nav>
-            <a href="/" class="footer-logo-link" title="Clique no Logo para ir para Home"><img
+            <a href="index.html" class="footer-logo-link" title="Clique no Logo para ir para Home"><img
                 src="assets/img/logo-mais-zen-pb.png" class="footer-logo" alt="Logo P&B da Mais Zen"></a>
                 <p class="copyright-text">&copy; Copyright Grupo 1 do Portal TECH - 2022</p>					
 
@@ -410,7 +420,5 @@
         </section>
 
     </article>
-<!-- Include jQuery and main.js - Short URL http://srt.lt/Ro3W2 -->
-    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
 </body>
 </html>

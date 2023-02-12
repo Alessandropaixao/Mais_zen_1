@@ -68,17 +68,79 @@ jQuery(document).keyup(function(e) { // Listen for keyboard presses
 
 });
 
-var modal = document.getElementById('formulario');
+// fale com consultor
 
-var btn = document.getElementsByClassName('add_table')[0];
+const consultorModal = document.getElementById('formulario_consultor');
 
-var close = document.getElementsByClassName("close")[0];
+const consultorBtn = document.getElementsByClassName('add_table_consultor')[0];
 
-var edit = document.getElementsByClassName("fa fa-pencil-square-o");
+const consultorClose = document.getElementsByClassName("close_consultor")[0];
 
-var input = document.getElementsByTagName("input");
+const consultorEdit = document.getElementsByClassName("fa fa-pencil-square-o");
 
-var option = document.getElementsByTagName("option");
+const consultorInput = document.getElementsByTagName("input");
+
+const consultorOption = document.getElementsByTagName("option");
+
+const select = document.querySelector("#select_consultor");
+
+const options = select.querySelectorAll("option");
+
+
+for (let i = 0; i < options.length; i++) {
+    options[i].style.border = "solid #201f1f";
+    options[i].style.borderRadius = "5px";
+    options[i].style.borderWidth = "1px";
+    options[i].style.width = "50%";
+    options[i].style.height = "50px"
+    options[i].style.padding = "50px";
+    options[i].style.fontFamily = "Arial, Helvetica, sans-serif";
+    options[i].style.fontSize = "20px";
+    options[i].style.color = "#959595";
+
+  }
+
+
+
+function clearContentsConsultor(){
+    consultorModal.style.top = "-200%";
+    consultorModal.style.background = "rgba(0,0,0,0.0)";
+    consultorModal.style.zIndex = -1;
+    document.getElementById('title-form_consultor').innerHTML = "Fale com um Consultor";
+    document.getElementsByName("action_consultor")[0].value = "create";
+    
+}
+
+consultorBtn.onclick = function() {
+    consultorModal.style.zIndex = 1;consultorModal.style.top = 0;
+    consultorModal.style.background = "rgba(0,0,0,0.7)";
+}
+
+consultorClose.onclick = function() {
+	clearContentsConsultor();
+}
+
+window.onclick = function(event) {
+    if (event.target == consultorModal) {
+        clearContentsConsultor();
+        location.reload()
+    }
+
+}
+
+
+// Informações para Contato
+const modal = document.getElementById('formulario');
+
+const btn = document.getElementsByClassName('add_table')[0];
+
+const close = document.getElementsByClassName("close")[0];
+
+const edit = document.getElementsByClassName("fa fa-pencil-square-o");
+
+const input = document.getElementsByTagName("input");
+
+const option = document.getElementsByTagName("option");
 
 function clearContents(){
     modal.style.top = "-200%";
