@@ -11,5 +11,10 @@
 
  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 #� �M�a�i�s�_�z�e�n�_�1�
-�
-�
+# 5º Sprint V - BD:  Create e Read + Apresentação do PI
+o Banco Mais Zen foi desenvolvido no Microsoft SQL Server
+
+Todos os arquivos estão na pasta DB do diretório.
+
+Diagrama Entidade Relacionamento, Mais Zen:
+![image](https://user-images.githubusercontent.com/116391246/218890433-274874c8-e6b4-4b0a-9828-6adad9722463.png)
