@@ -9,6 +9,7 @@ SELECT produto.*, desc_cliente.descricao
 FROM produto
 JOIN desc_cliente ON produto.id_cliente = desc_cliente.id_cpf_cnpj;
 
+
 SELECT produto.*, desc_cliente.descricao, Cliente.Nome
 FROM produto
 JOIN desc_cliente ON produto.id_cliente = desc_cliente.id_cpf_cnpj 
